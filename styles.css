@@ -1,18 +1,16 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and Basic Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
-/* Header Styles */
+/* Header */
 header {
     background-color: #333;
     color: white;
@@ -78,7 +76,7 @@ header nav ul li a {
     align-items: center;
     width: 100%;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid white;
 }
 
 .shopping-list input {
@@ -101,7 +99,7 @@ header nav ul li a {
 .checkout-button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: blue;
     color: white;
     border: none;
     margin-top: 10px;
@@ -109,7 +107,7 @@ header nav ul li a {
 }
 
 .checkout-button:hover {
-    background-color: #0056b3;
+    background-color: darkblue;
 }
 
 /* Show Shopping List on Hover */
@@ -118,14 +116,14 @@ header nav ul li a {
     display: block;
 }
 
-/* Main Content */
+/* Main */
 main {
     padding: 20px;
     display: flex;
     gap: 20px;
 }
 
-/* Side Bar Styles */
+/* Side Bar */
 .side-bar {
     width: 130px;
     background-color: white;
@@ -148,7 +146,7 @@ main {
     color: purple;
 }
 
-/* Product List Styles */
+/* Product List */
 .product-list {
     flex: 1;
     display: flex;
@@ -214,7 +212,7 @@ main {
     background-color: #218838;
 }
 
-/* Product Page Styles */
+/* Product Page */
 .product-details {
     flex: 1;
     display: flex;
@@ -234,7 +232,7 @@ main {
 
 .product-description {
     margin: 10px 0;
-    color: #555;
+    color: grey;
 }
 
 input[type="number"] {
