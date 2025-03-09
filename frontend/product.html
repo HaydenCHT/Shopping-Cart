@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li class="shopping-list-container">
+                    <a href="#" class="shopping-list-button">Shopping List</a>
+		                <div class="shopping-list">
+                        <h3>Shopping List (Total: $0.00)</h3>
+                        <ul></ul>
+                        <template id="cart-item-template">
+                            <li data-pid="">
+                                <span class="item-name"></span>
+                                <div class="quantity-controls">
+                                    <button class="decrement">-</button>
+                                    <input type="number" min="1" class="quantity" value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <span class="item-price"></span>
+                                <button class="remove-item">X</button>
+                            </li>
+                        </template>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="side-bar">
+            <nav>
+                <ul id="category-list"></ul>
+            </nav>
+        </section>
+        <section class="product-details">
+            <nav class="breadcrumb" id="breadcrumb"></nav>
+            <img id="product-image" alt="Product">
+            <div class="product-info">
+                <h2 id="product-name"></h2>
+                <p id="product-price"></p>
+                <button class="add-to-cart" id="add-to-cart-btn">Add to Cart</button>
+                <p id="product-description"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Online Shop. All rights reserved.</p>
+    </footer>
+    <script src="/product.js"></script>
+    <script src="/cart.js"></script>
+</body>
+</html>
